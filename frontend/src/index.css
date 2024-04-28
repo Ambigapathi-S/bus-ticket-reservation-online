@@ -1,0 +1,269 @@
+:root {
+  --primary: #d84e55;
+  --primary-light: #d84e554d;
+  --gray: #00000099;
+  --black: #000000;
+  --white: #ffffff;
+  --red: #ff0606;
+  --light-gray: #d4d4d4;
+  --inter-font: 'Inter', sans-serif;
+  --montserrat-font: 'Montserrat', sans-serif;
+  --title-font: "Dancing Script", cursive;
+  --border-radius: "10px";
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --box-shadow-header: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Header UI */
+
+header {
+  background-color: var(--primary);
+}
+
+header .navbar-brand {
+  color: var(--white) !important;
+  display: flex;
+  align-items: center;
+  font-family: var(--title-font);
+}
+
+header .navbar-brand .logo {
+  font-size: 35px;
+  line-height: 30px;
+  display: inline;
+  padding-right: 5px;
+}
+
+header .navbar-nav .nav-link {
+  color: var(--white);
+}
+
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  font-family: var(--inter-font);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.FormUI {
+  width: 50%;
+  box-shadow: var(--box-shadow);
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  font-family: var(--inter-font);
+}
+
+.FormUI h3.title {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 1rem 0;
+  font-family: var(--montserrat-font);
+  letter-spacing: -.5px;
+}
+
+
+button.btn.btn-primary,
+a.btn.btn-primary,
+input.btn.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+}
+
+p.error {
+  font-size: 12px;
+  font-family: var(--inter-font);
+  letter-spacing: -0.4px;
+  font-weight: 500;
+  color: var(--red);
+  padding: 2px;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border: 2px solid var(--black) !important;
+}
+
+
+.form-control.error {
+  border: 1px solid var(--red) !important;
+}
+
+
+table tr th,
+table tr td {
+  font-size: 15px;
+  font-family: var(--inter-font);
+  font-weight: 500;
+}
+
+table tr th {
+  background-color: var(--primary-light) !important;
+  color: var(--primary) !important;
+  font-size: 17px;
+}
+
+table tr td {
+  background-color: var(--white) !important;
+}
+
+table tbody tr:hover td {
+  background-color: #fafafa !important;
+}
+
+button.btn.btn-info {
+  background-color: var(--white);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+button.btn.btn-info:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* Tooltip CSS */
+
+.tooltip {
+  position: relative;
+  display: inline-flex !important;
+  opacity: 1 !important;
+  background: var(--primary-light);
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.tooltip a {
+  color: var(--black);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: -55px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  border: 5px solid #000;
+  top: 26px;
+  position: absolute;
+  left: 48%;
+  transform: rotate(45deg);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip svg {
+  font-size: 18px;
+}
+
+.tooltip.edit {
+  background-color: #0068003f;
+}
+
+.tooltip.edit svg {
+  color: #006800;
+}
+
+.tooltip.edit .tooltiptext,
+.tooltip.edit:hover {
+  background-color: #006800;
+}
+
+.tooltip.edit .tooltiptext::after {
+  border: 5px solid #006800;
+}
+
+.tooltip.delete {
+  background-color: #b7040440;
+}
+
+.tooltip.delete svg {
+  color: #b70404;
+}
+
+.tooltip.delete .tooltiptext,
+.tooltip.delete:hover {
+  background-color: #b70404;
+}
+
+.tooltip.delete .tooltiptext::after {
+  border: 5px solid #b70404;
+}
+
+.tooltip.view {
+  background-color: #00808045;
+}
+
+.tooltip.view svg {
+  color: #008080;
+}
+
+.tooltip.view .tooltiptext,
+.tooltip.view:hover {
+  background-color: #008080;
+}
+
+.tooltip.view .tooltiptext::after {
+  border: 5px solid #008080;
+}
+
+.tooltip.edit:hover svg,
+.tooltip.delete:hover svg,
+.tooltip.view:hover svg {
+  color: var(--white);
+}
+
+.tooltip button {
+  background: transparent;
+  border: none;
+}
+
+a.btn.btn-back, button.btn.btn-back  {
+  background-color: var(--light-gray);
+  color: var(--black);
+}
