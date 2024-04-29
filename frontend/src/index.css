@@ -267,3 +267,9 @@ a.btn.btn-back, button.btn.btn-back  {
   background-color: var(--light-gray);
   color: var(--black);
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary);
+}

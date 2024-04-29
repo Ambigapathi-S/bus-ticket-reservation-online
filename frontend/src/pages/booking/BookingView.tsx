@@ -78,7 +78,7 @@ const BookingView = () => {
         <div className="head d-flex justify-content-between align-items-center">
           <h3>Booking Details #{BookingDetails?.id}</h3>
           <div className="d-flex gap-2">
-            {BookingDetails?.status == "pending" && (
+            {BookingDetails?.status != "cancelled" && (
               <button
                 type="button"
                 className="btn btn-danger"
