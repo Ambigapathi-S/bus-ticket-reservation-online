@@ -14,13 +14,13 @@ This project implements a web-based Online Bus Ticket Booking Application with r
 
 # Getting Started
  This project requires the following:
-     * Java 17
-     * Node.js 18.18.0
-     * npm 9.7.2
-     * IDE (IntelliJ IDEA or VS Code)
-     * React ^18.2.0
-     * Typescript^4.9.5
-     * MySQL Workbench
+  * Java 17
+  * Node.js 18.18.0
+  * npm 9.7.2
+  * IDE (IntelliJ IDEA or VS Code)
+  * React ^18.2.0
+  * Typescript^4.9.5
+  * MySQL Workbench
     
 # Project Structure:
    * frontend: React application for the user interface
