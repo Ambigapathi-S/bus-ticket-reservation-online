@@ -25,6 +25,7 @@ This project implements a web-based Online Bus Ticket Booking Application with r
 # Project Structure:
    * frontend: React application for the user interface
    * backend: Spring Boot application for the backend API
+   * [SQL Queries are added here](https://github.com/Ambigapathi-S/bus-ticket-reservation-online/tree/main/backend/src/main/resources/static)
      
    [ Added a video of project work flow.Click this link to go the video path.](https://github.com/Ambigapathi-S/bus-ticket-reservation-online/blob/main/frontend/public/Book%20Bus%20Online.mp4)
   
