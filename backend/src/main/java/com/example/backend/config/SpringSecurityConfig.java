@@ -26,6 +26,7 @@ public class SpringSecurityConfig {
     SecurityFilterChain securityFilterChain (HttpSecurity httpSecurity) throws Exception {
         httpSecurity.csrf().disable()
                 .authorizeHttpRequests()
+                .requestMatchers("/v3/api-docs/**", "/swagger-ui/**").permitAll()
                 .requestMatchers(HttpMethod.POST, "api/auth/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "api/bus").permitAll()
                 .requestMatchers(HttpMethod.GET, "api/bus/**").permitAll()
